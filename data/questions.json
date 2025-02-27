@@ -1,100 +1,158 @@
-{
+{ 
   "questions": [
     {
-      "title": "React Fundamentals Quiz",
-      "description": "Test your knowledge of core React concepts.",
-      "questions": [
-        {
-          "question": "Imagine you're building a reusable UI element. What's the best way to encapsulate its logic and appearance in React?",
-          "options": ["A function", "A class component", "A functional component", "A React Hook"],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Functional components are the preferred way to define reusable UI elements in modern React."
-        },
-        {
-          "question": "React uses a virtual DOM. Why is this beneficial?",
-          "options": [
-            "It makes rendering faster by directly manipulating the real DOM.",
-            "It allows React to optimize updates and minimize direct DOM manipulations.",
-            "It simplifies debugging by providing a mirror of the real DOM.",
-            "It reduces the size of the application bundle."
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "The virtual DOM allows React to efficiently update the real DOM by comparing the previous and current virtual DOM representations."
-        },
-        {
-          "question": "You have a component that needs to manage its own data. What's the primary mechanism for doing this in React?",
-          "options": ["Props", "State", "Context", "Refs"],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "State allows components to manage and update their own internal data."
-        },
-        {
-          "question": "How do you pass data from a parent component to a child component?",
-          "options": ["Using state", "Using props", "Using context", "Using refs"],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Props are used to pass data down the component tree from parent to child components."
-        },
-        {
-          "question": "Which of the following is NOT a valid way to define a component in React?",
-          "options": ["function MyComponent() {}", "class MyComponent extends React.Component {}", "const MyComponent = () => {}", "const MyComponent = React.createComponent()"],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "React.createComponent() is not a standard method for defining components.  Functional and class components, as well as arrow function components, are all valid."
-        },
-        {
-          "question": "What is JSX, and why is it used in React?",
-          "options": [
-            "A templating engine used for server-side rendering.",
-            "A JavaScript extension that allows HTML-like syntax within JavaScript.",
-            "A library for managing component state.",
-            "A tool for debugging React applications."
-          ],
-          "correctOption": 1,
-          "points": 20,
-          "explanation": "JSX makes it easier to write and reason about the structure of your UI within your JavaScript code."
-        },
-        {
-          "question": "You need to perform a side effect (like fetching data or setting up a subscription) in a React component. Which Hook is most suitable for this?",
-          "options": ["useState", "useEffect", "useContext", "useRef"],
-          "correctOption": 1,
-          "points": 20,
-          "explanation": "useEffect is designed for handling side effects in functional components."
-        },
-        {
-          "question": "What is the purpose of the dependency array in the useEffect Hook?",
-          "options": [
-            "To specify which variables the effect depends on.",
-            "To control how often the effect runs.",
-            "To define the order in which effects are executed.",
-            "Both A and B"
-          ],
-          "correctOption": 3,
-          "points": 20,
-          "explanation": "The dependency array tells React when to re-run the effect based on changes to the specified variables.  An empty array causes the effect to run only once on mount and unmount."
-        },
-        {
-          "question": "You want to store a value that persists across renders but doesn't cause a re-render when it changes. Which Hook should you use?",
-          "options": ["useState", "useEffect", "useContext", "useRef"],
-          "correctOption": 3,
-          "points": 20,
-          "explanation": "useRef creates a mutable ref object that can hold any value.  Changes to the ref don't trigger re-renders."
-        },
-        {
-          "question": "What is the primary benefit of using React Router?",
-          "options": [
-            "It simplifies state management.",
-            "It enables navigation between different views in a single-page application.",
-            "It improves the performance of React applications.",
-            "It provides a way to interact with APIs."
-          ],
-          "correctOption": 1,
-          "points": 20,
-          "explanation": "React Router allows you to define routes and navigate between different components in your application without full page reloads."
-        }
-      ]
+      "question": "Imagine you're building a reusable UI element. What's the best way to encapsulate its logic and appearance in React?",
+      "options": ["A function",  "A functional component", "A class component", "A React Hook"],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Functional components are the preferred way to define reusable UI elements in modern React."
+    },
+    {
+      "question": "React uses a virtual DOM. Why is this beneficial?",
+      "options": [
+        "It makes rendering faster by directly manipulating the real DOM.",
+        "It allows React to optimize updates and minimize direct DOM manipulations.",
+        "It simplifies debugging by providing a mirror of the real DOM.",
+        "It reduces the size of the application bundle."
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "The virtual DOM allows React to efficiently update the real DOM by comparing the previous and current virtual DOM representations."
+    },
+    {
+      "question": "You have a component that needs to manage its own data. What's the primary mechanism for doing this in React?",
+      "options": ["Props", "State", "Context", "Refs"],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "State allows components to manage and update their own internal data."
+    },
+    {
+      "question": "How do you pass data from a parent component to a child component?",
+      "options": ["Using state", "Using props", "Using context", "Using refs"],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Props are used to pass data down the component tree from parent to child components."
+    },
+    {
+      "question": "Which of the following is NOT a valid way to define a component in React?",
+      "options": ["function MyComponent() {}", "const MyComponent = React.createComponent()", "class MyComponent extends React.Component {}", "const MyComponent = () => {}"],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "React.createComponent() is not a standard method for defining components. Functional and class components, as well as arrow function components, are all valid."
+    },
+    {
+      "question": "What is JSX, and why is it used in React?",
+      "options": [
+        "A templating engine used for server-side rendering.",
+        "A JavaScript extension that allows HTML-like syntax within JavaScript.",
+        "A library for managing component state.",
+        "A tool for debugging React applications."
+      ],
+      "correctOption": 1,
+      "points": 20,
+      "explanation": "JSX makes it easier to write and reason about the structure of your UI within your JavaScript code."
+    },
+    {
+      "question": "You need to perform a side effect (like fetching data or setting up a subscription) in a React component. Which Hook is most suitable for this?",
+      "options": ["useState", "useEffect", "useContext", "useRef"],
+      "correctOption": 1,
+      "points": 20,
+      "explanation": "useEffect is designed for handling side effects in functional components."
+    },
+    {
+      "question": "What is the purpose of the dependency array in the useEffect Hook?",
+      "options": [
+        "To specify which variables the effect depends on.",
+        "Both A and B",
+        "To control how often the effect runs.",
+        "To define the order in which effects are executed."
+        
+      ],
+      "correctOption": 1,
+      "points": 20,
+      "explanation": "The dependency array tells React when to re-run the effect based on changes to the specified variables. An empty array causes the effect to run only once on mount and unmount."
+    },
+    {
+      "question": "You want to store a value that persists across renders but doesn't cause a re-render when it changes. Which Hook should you use?",
+      "options": ["useState", "useRef", "useEffect", "useContext" ],
+      "correctOption": 1,
+      "points": 20,
+      "explanation": "useRef creates a mutable ref object that can hold any value. Changes to the ref don't trigger re-renders."
+    },
+    {
+      "question": "What is the primary benefit of using React Router?",
+      "options": [
+        "It simplifies state management.",
+        "It enables navigation between different views in a single-page application.",
+        "It improves the performance of React applications.",
+        "It provides a way to interact with APIs."
+      ],
+      "correctOption": 1,
+      "points": 20,
+      "explanation": "React Router allows you to define routes and navigate between different components in your application without full page reloads."
+    },
+    {
+      "question": "What is the primary purpose of React's Context API?",
+      "options": [
+        "To manage global state that can be accessed by any component.",
+        "To pass data down the component tree without using props at every level.",
+        "To handle side effects like API calls and DOM manipulations.",
+        "To optimize performance by preventing unnecessary re-renders."
+      ],
+      "correctOption": 1,
+      "points": 15,
+      "explanation": "The Context API provides a way to share data deep within the component tree without explicitly passing props at each level."
+    },
+    {
+      "question": "Which of the following is a common use case for React's `useRef` Hook?",
+      "options": [
+        
+        "Storing a value that persists across renders without causing a re-render.",
+        "Accessing a DOM element directly.",
+        "Managing component state.",
+        "Handling side effects."
+      ],
+      "correctOption": 1,
+      "points": 15,
+      "explanation": "`useRef` can be used to get a direct reference to a DOM element, which is useful for things like focusing an input or triggering animations."
+    },
+    {
+      "question": "What is the difference between controlled and uncontrolled components in React?",
+      "options": [
+        "Controlled components manage their own state internally, while uncontrolled components rely on the DOM to store their data.",
+        "Controlled components have their form data handled by React's state, while uncontrolled components have their form data handled by the DOM itself.",
+        "Controlled components are easier to use for simple forms, while uncontrolled components are better for complex forms.",
+        "Controlled components are more performant than uncontrolled components."
+      ],
+      "correctOption": 1,
+      "points": 25,
+      "explanation": "In controlled components, React is the single source of truth for the form data. The input's value is controlled by React's state. In uncontrolled components, the DOM handles the form data, and you access it using a ref."
+    },
+    {
+      "question": "What is the purpose of React.memo?",
+      "options": [
+       
+        "To memoize the state of a component.",
+        "To memoize the result of a function component and prevent unnecessary re-renders.",
+        "To memoize the props of a component.",
+        "To memoize the entire component tree."
+      ],
+      "correctOption": 1,
+      "points": 20,
+      "explanation": "`React.memo` is a higher-order component that memoizes functional components. It prevents re-renders if the props haven't changed."
+    },
+    {
+      "question": "What is a Higher-Order Component (HOC) in React?",
+      "options": [
+        
+        "A component that manages the state of other components.",
+        "A component that takes another component as an argument and/or returns a new component.",
+        "A component that renders other components.",
+        "A component that is used for routing."
+      ],
+      "correctOption": 1,
+      "points": 20,
+      "explanation": "HOCs are a way to reuse component logic. They enhance or wrap other components with shared functionality."
     }
   ]
-}
+} 
