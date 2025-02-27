@@ -122,8 +122,6 @@ const App = () => {
             dispatch={dispatch}
           />
         )}
-        <p>1/15</p>
-        <p>Question</p>
       </Main>
     </div>
   );
