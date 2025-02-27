@@ -6,7 +6,7 @@ const Options = ({ question, dispatch, answer }) => {
     <div>
       {question.options.map((option, index) => (
         <button
-          className={`block text-3xl border-2 p-6 cursor-pointer rounded-full btn my-6 w-full btn btn-option ${
+          className={`block text-xl md:text-3xl border-2 p-3 md:p-6 cursor-pointer rounded-full btn my-6 w-full btn btn-option ${
             answer === index ? "answer" : ""
           } ${
             hasAnswered
