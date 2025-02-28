@@ -49,14 +49,14 @@
         "A tool for debugging React applications.",
         "A templating engine used for server-side rendering."
       ],
-      "correctOption": 3,
+      "correctOption": 0,
       "points": 20,
       "explanation": "JSX makes it easier to write and reason about the structure of your UI within your JavaScript code."
     },
     {
       "question": "You need to perform a side effect (like fetching data or setting up a subscription) in a React component. Which Hook is most suitable for this?",
       "options": ["useEffect","useState", "useContext", "useRef"],
-      "correctOption": 1,
+      "correctOption": 0,
       "points": 20,
       "explanation": "useEffect is designed for handling side effects in functional components."
     },
