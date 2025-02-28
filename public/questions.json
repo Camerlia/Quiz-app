@@ -2,8 +2,8 @@
   "questions": [
     {
       "question": "Imagine you're building a reusable UI element. What's the best way to encapsulate its logic and appearance in React?",
-      "options": ["A function",  "A functional component", "A class component", "A React Hook"],
-      "correctOption": 1,
+      "options": ["A function", "A class component", "A React Hook" ,  "A functional component"],
+      "correctOption": 3,
       "points": 10,
       "explanation": "Functional components are the preferred way to define reusable UI elements in modern React."
     },
@@ -21,15 +21,15 @@
     },
     {
       "question": "You have a component that needs to manage its own data. What's the primary mechanism for doing this in React?",
-      "options": ["Props", "State", "Context", "Refs"],
-      "correctOption": 1,
+      "options": ["Props", "Context", "State","Refs"],
+      "correctOption": 2,
       "points": 10,
       "explanation": "State allows components to manage and update their own internal data."
     },
     {
       "question": "How do you pass data from a parent component to a child component?",
-      "options": ["Using state", "Using props", "Using context", "Using refs"],
-      "correctOption": 1,
+      "options": ["Using props", "Using state", "Using context", "Using refs"],
+      "correctOption": 0,
       "points": 10,
       "explanation": "Props are used to pass data down the component tree from parent to child components."
     },
@@ -43,18 +43,19 @@
     {
       "question": "What is JSX, and why is it used in React?",
       "options": [
-        "A templating engine used for server-side rendering.",
+       
         "A JavaScript extension that allows HTML-like syntax within JavaScript.",
         "A library for managing component state.",
-        "A tool for debugging React applications."
+        "A tool for debugging React applications.",
+        "A templating engine used for server-side rendering."
       ],
-      "correctOption": 1,
+      "correctOption": 3,
       "points": 20,
       "explanation": "JSX makes it easier to write and reason about the structure of your UI within your JavaScript code."
     },
     {
       "question": "You need to perform a side effect (like fetching data or setting up a subscription) in a React component. Which Hook is most suitable for this?",
-      "options": ["useState", "useEffect", "useContext", "useRef"],
+      "options": ["useEffect","useState", "useContext", "useRef"],
       "correctOption": 1,
       "points": 20,
       "explanation": "useEffect is designed for handling side effects in functional components."
@@ -63,7 +64,7 @@
       "question": "What is the purpose of the dependency array in the useEffect Hook?",
       "options": [
         "To specify which variables the effect depends on.",
-        "Both A and B",
+        "Both A and C",
         "To control how often the effect runs.",
         "To define the order in which effects are executed."
         
@@ -74,8 +75,8 @@
     },
     {
       "question": "You want to store a value that persists across renders but doesn't cause a re-render when it changes. Which Hook should you use?",
-      "options": ["useState", "useRef", "useEffect", "useContext" ],
-      "correctOption": 1,
+      "options": ["useState", "useEffect", "useContext" , "useRef"],
+      "correctOption": 3,
       "points": 20,
       "explanation": "useRef creates a mutable ref object that can hold any value. Changes to the ref don't trigger re-renders."
     },
@@ -94,25 +95,24 @@
     {
       "question": "What is the primary purpose of React's Context API?",
       "options": [
-        "To manage global state that can be accessed by any component.",
         "To pass data down the component tree without using props at every level.",
+        "To manage global state that can be accessed by any component.",
         "To handle side effects like API calls and DOM manipulations.",
         "To optimize performance by preventing unnecessary re-renders."
       ],
-      "correctOption": 1,
+      "correctOption": 0,
       "points": 15,
       "explanation": "The Context API provides a way to share data deep within the component tree without explicitly passing props at each level."
     },
     {
       "question": "Which of the following is a common use case for React's `useRef` Hook?",
       "options": [
-        
-        "Storing a value that persists across renders without causing a re-render.",
         "Accessing a DOM element directly.",
         "Managing component state.",
-        "Handling side effects."
+        "Handling side effects.",
+        "Storing a value that persists across renders without causing a re-render."
       ],
-      "correctOption": 1,
+      "correctOption": 3,
       "points": 15,
       "explanation": "`useRef` can be used to get a direct reference to a DOM element, which is useful for things like focusing an input or triggering animations."
     },
@@ -131,13 +131,12 @@
     {
       "question": "What is the purpose of React.memo?",
       "options": [
-       
-        "To memoize the state of a component.",
         "To memoize the result of a function component and prevent unnecessary re-renders.",
+        "To memoize the state of a component.",
         "To memoize the props of a component.",
         "To memoize the entire component tree."
       ],
-      "correctOption": 1,
+      "correctOption": 0,
       "points": 20,
       "explanation": "`React.memo` is a higher-order component that memoizes functional components. It prevents re-renders if the props haven't changed."
     },

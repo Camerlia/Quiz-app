@@ -5,7 +5,7 @@ const NextButton = ({ dispatch, answer, quesLength, index }) => {
   if (index < quesLength - 1) {
     return (
       <button
-        className={`rounded-full btn btn-ui p-6 text-xl md:text-2xl bg-blue-700 transition hover:bg-blue-400`}
+        className={`rounded-full btn btn-ui p-6 text-xl md:text-2xl bg-blue-700 transition hover:bg-blue-400 border-2 border-blue-700`}
         onClick={() => dispatch({ type: "newQuestion" })}
       >
         Next

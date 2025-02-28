@@ -8,13 +8,10 @@ const Options = ({ question, dispatch, answer }) => {
         <button
           className={`block text-xl md:text-3xl border-2 p-3 md:p-6 cursor-pointer rounded-full btn my-6 w-full btn btn-option ${
             answer === index ? "answer" : ""
-          } ${
-            hasAnswered
-              ? question.correctOption === index
-                ? "correct"
-                : "wrong"
-              : ""
-          } `}
+          }
+          ${hasAnswered && index === question.correctOption ? "correct" : ""}
+            ${hasAnswered && answer === index && answer !== question.correctOption ? "wrong" : ""}
+          `}
           key={option}
           onClick={() => dispatch({ type: "newAnswer", payload: index })}
           disabled={hasAnswered}
