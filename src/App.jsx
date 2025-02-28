@@ -93,7 +93,7 @@ const App = () => {
   const maxPossiblePoints = questions.reduce((a, b) => a + b.points, 0);
   useEffect(function () {
     async function fetchData() {
-      const res = await fetch(`http://localhost:8000/questions`);
+      const res = await fetch(`/questions.json`);
       if (!res) {
         dispatch({ type: "dataFailed" });
       }
